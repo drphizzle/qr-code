@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QR-CODE</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background: #d5f5e3;
+        }
+        .qr-container {
+            width: 300px;
+            height: 450px;
+            border: 0px solid none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px;
+            background: #fff;
+        }
+        .child-div {
+            width: 270px;
+            height: 280px;
+            border: 0px solid blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #0D8EFF;
+            border-radius: 7px;
+        }
+        .qrcode {
+            width: 135px;
+            height: 140px;
+        }
+        .qr-text {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="qr-container">
+        <div class="child-div">
+            <img src="frame (1).png" alt="" class="qrcode">
+        </div>
+        <div class="qr-text">
+            <h3>Improve your front-end skills by building projects</h3>
+            <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        </div>
+    </div>
 </body>
 </html>
